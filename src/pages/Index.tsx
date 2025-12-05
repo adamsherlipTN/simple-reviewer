@@ -1,13 +1,15 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { Calculator } from '@/components/calculator/Calculator';
+import { Helmet } from 'react-helmet-async';
 
 const Index = () => {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
-    </div>
+    <>
+      <Helmet>
+        <title>SWP Implementation Planner | Estimate Costs & Timelines</title>
+        <meta name="description" content="Plan end-to-end SWP implementations including job architecture mapping, enablement, and strategic consulting with accurate cost and timeline estimates." />
+      </Helmet>
+      <Calculator />
+    </>
   );
 };
 
